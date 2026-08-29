@@ -1,0 +1,222 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: linear-gradient(270deg, #e0f7fa, #b3e5fc, #bbdefb, #ffffff);
+  background-size: 800% 800%;
+  animation: gradienteAzul 20s ease infinite;
+}
+
+@keyframes gradienteAzul {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* NAVEGAÇÃO */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #bbdefb;
+  color: #3a867b;
+}
+
+/* Botão do Menu Mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MAIN */
+main {
+  padding: 40px;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+/* BALÕES */
+.balao {
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.balao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.balao h2 {
+  font-size: 2rem;
+  color: #3a867b;
+  margin-bottom: 15px;
+}
+
+/* PROCEDIMENTOS */
+.procedimentos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.balao-item {
+  background: linear-gradient(to top left, #bbdefb, #ffffff);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.balao-item:hover {
+  transform: translateY(-4px);
+}
+
+.balao-item h3 {
+  color: #3a867b;
+  margin-bottom: 10px;
+}
+
+/* IMAGENS */
+.imagens-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imagem {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  background-color: #128C7E;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* BOTÃO TOPO */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #3a867b;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Rolagem suave */
+html {
+  scroll-behavior: smooth;
+}

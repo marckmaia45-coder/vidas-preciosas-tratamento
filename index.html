@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="topo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Centro especializado no tratamento masculino da dependência química e alcoolismo com abordagem humanizada.">
+  <title>🚑 Vidas Preciosas - Captação e Remoção</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Menu de navegação -->
+  <nav>
+    <div class="nav-container">
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="menu">
+        <li><a href="#quemsomos" class="menu-item">Quem Somos</a></li>
+        <li><a href="#procedimentos" class="menu-item">Procedimentos</a></li>
+        <li><a href="#imagens" class="menu-item">Imagens</a></li>
+        <li><a href="#contato" class="menu-item">Fale Conosco</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header>
+    <img src="imagens usadas no site/logoo.png" alt="Imagem de fundo" class="header-image">
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section id="quemsomos" class="balao">
+      <h2>Quem Somos</h2>
+      <p><strong>Vidas Preciosas Captação e Remoção é especializado no tratamento masculino de dependência química, alcoolismo e jogadores de jogos de azar e transtornos associados. Nossa abordagem é humanizada, com tratamento individual e em grupo, incluindo psicoterapia e acompanhamento médico especializado.</strong></p>
+    </section>
+
+    <section id="procedimentos" class="balao">
+      <h2>Procedimentos</h2>
+      <div class="procedimentos-container">
+        <div class="balao-item">
+          <h3>PPR - Plano de Prevenção à Recaída</h3>
+          <p><strong>Estratégias e métodos para evitar a recaída e manter o paciente no caminho da recuperação.</strong></p>
+        </div>
+        <div class="balao-item">
+          <h3>TRE - Terapia Racional Emotiva</h3>
+          <p><strong>Tratamento baseado na identificação e modificação de pensamentos irracionais.</strong></p>
+        </div>
+        <div class="balao-item">
+          <h3>TCC - Terapia Cognitiva Comportamental</h3>
+          <p><strong>Foca em identificar e alterar padrões de pensamento e comportamento prejudiciais.</strong></p>
+        </div>
+        <div class="balao-item">
+          <h3>Psicoterapia Individual e em Grupo</h3>
+          <p><strong>Acompanhamento terapêutico focado nas necessidades do paciente, tanto individual quanto coletivamente.</strong></p>
+        </div>
+        <div class="balao-item">
+          <h3>Acompanhamento Médico</h3>
+          <p><strong>Atendimento médico mensal para acompanhamento da saúde do paciente.</strong></p>
+        </div>
+        <div class="balao-item">
+          <h3>Terapeuta Holístico 24h</h3>
+          <p><strong>Atendimento contínuo de terapeutas holísticos para promover o bem-estar físico e mental.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="imagens" class="balao">
+      <h2>Imagens</h2>
+      <p><strong>Confira algumas imagens do nosso Vidas Preciosas Captação e Remoção.</strong></p>
+      <div class="imagens-container">
+        <img src="imagens usadas no site/refeitorio.png" alt="Imagem do centro 1" class="imagem">
+        <img src="imagens usadas no site/sala.png" alt="Imagem do centro 2" class="imagem">
+        <img src="imagens usadas no site/vidas 1.jpeg" alt="Imagem do centro 3" class="imagem">
+        <img src="imagens usadas no site/vidas 2.jpeg" alt="Imagem do centro 4" class="imagem">
+        <img src="imagens usadas no site/vidas 3.jpeg" alt="Imagem do centro 5" class="imagem">
+        <img src="imagens usadas no site/vidas 4.jpeg" alt="Imagem do centro 6" class="imagem">
+        <img src="imagens usadas no site/vidas 5.jpeg" alt="Imagem do centro 7" class="imagem">
+        <img src="imagens usadas no site/vidas 6.jpeg" alt="Imagem do centro 8" class="imagem">
+        <img src="imagens usadas no site/vidas 7.jpeg" alt="Imagem do centro 9" class="imagem">
+      </div>
+    </section>
+
+
+
+    <section id="contato" class="balao">
+      <h2>Fale Conosco</h2>
+      <p><strong>Se você tem alguma dúvida ou deseja saber mais sobre o tratamento, entre em contato conosco.</strong></p>
+      <a href="https://wa.me/19998686453" class="btn-whatsapp" target="_blank">Fale Conosco via WhatsApp</a>
+    </section>
+  </main>
+
+  <a href="#topo" class="back-to-top">⬆</a>
+
+  <footer>
+    <p>&copy; 2025 Vidas Preciosas - Captação e Remoção. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    window.addEventListener('scroll', function() {
+      const body = document.body;
+      if (window.scrollY > 200) {
+        body.classList.add('scrolled');
+      } else {
+        body.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
